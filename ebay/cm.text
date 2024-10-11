@@ -1,0 +1,52 @@
+vite react  (search in google)
+https://vite.dev/guide/   (vite react get started)
+
+npm create vite@latest   (cmd for create new vite project)
+
+npm i (cmd install node modules)
+
+https://tailwindcss.com/docs/guides/vite   (Tailwind CSS link)
+Install Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer (cmd)
+npx tailwindcss init -p   (cmd)
+
+Configure your template paths
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+Add the Tailwind directives to your CSS
+index.css
+(in index.css file all css code remove then paste this 3 line code)
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+npm run dev (cmd)
+
+Flowbite React - UI Component Library
+https://flowbite-react.com/docs/getting-started/introduction  (search in google)
+
+npm i flowbite-react   (cmd for instalation)
+
+setup
+tailwind.config.js:   (in this file add this code)
+const flowbite = require("flowbite-react/tailwind");
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+    flowbite.content(),
+  ],
+  plugins: [
+    // ...
+    flowbite.plugin(),
+  ],
+};
+
+
+delete app.css file
+remove all div code in App.jsx file 
